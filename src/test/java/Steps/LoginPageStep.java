@@ -2,6 +2,7 @@ package Steps;
 
 import BaseLayer.BaseClass;
 import PageLayer.LoginPage;
+import io.cucumber.java.AfterAll;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -23,6 +24,11 @@ public class LoginPageStep extends BaseClass {
 	@Then("user click on login button")
 	public void user_click_on_login_button() {
 		loginPage.clickOnLoginButton();
+	}
+
+	@AfterAll
+	public static void tearDown() {
+		driver.quit();
 	}
 
 }
