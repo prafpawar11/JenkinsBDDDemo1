@@ -10,3 +10,8 @@ Feature: Test End to End Cogmento Functionality
     And user validate home page title
     And user validate home page logo
 
+  Scenario: validate the Contact Page Functionality
+    When user click on contact link
+    And user click on create button
+    And user enter first name and last name
+    And user click on save button
