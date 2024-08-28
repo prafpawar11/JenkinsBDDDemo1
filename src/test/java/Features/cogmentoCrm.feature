@@ -15,3 +15,9 @@ Feature: Test End to End Cogmento Functionality
     And user click on create button
     And user enter first name and last name
     And user click on save button
+
+  Scenario: validate the Admin Deals Page Functionality
+    When user is click on deals page
+    And user click on crate button in deals Page
+    And user enter title
+    And user click on save button deals Page
