@@ -21,3 +21,9 @@ Feature: Test End to End Cogmento Functionality
     And user click on crate button in deals Page
     And user enter title
     And user click on save button deals Page
+
+  Scenario: validate Company Page Functionality
+    When user click on company link
+    And user click on create button in company page
+    And user enter company name
+    And user click on save button in company page
