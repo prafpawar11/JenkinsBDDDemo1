@@ -22,7 +22,8 @@ public class LoginPageStep extends BaseClass {
 	}
 
 	@Then("user click on login button")
-	public void user_click_on_login_button() {
+	public void user_click_on_login_button() throws InterruptedException {
+		Thread.sleep(5000);
 		loginPage.clickOnLoginButton();
 	}
 
