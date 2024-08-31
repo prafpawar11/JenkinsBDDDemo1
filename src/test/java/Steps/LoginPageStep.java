@@ -13,6 +13,7 @@ public class LoginPageStep extends BaseClass {
 	@Given("user is on login page")
 	public void user_is_on_login_page() {
 		BaseClass.initilization();
+	
 	}
 
 	@When("user enter valid credentails")
